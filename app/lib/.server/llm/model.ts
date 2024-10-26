@@ -20,7 +20,7 @@ export function getOpenRouterModel(apiKey: string, modelName: string) {
 export function getTogetherAIModel(apiKey: string, modelName: string) {
   const together = createOpenAI({
     apiKey,
-    baseURL: "https://api.together.xyz/v1",
+    baseURL: "https://api.together.xyz/v1/chat/completions",
   });
 
   return together(modelName);
