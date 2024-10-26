@@ -30,6 +30,6 @@ export function getModel(provider: 'anthropic' | 'together' | 'openrouter', apiK
   return provider === 'anthropic' 
     ? getAnthropicModel(apiKey) 
     : provider === 'together'
-    ? getTogetherAIModel(apiKey, modelName || 'meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo')
+    ? getTogetherAIModel(apiKey, modelName || 'databricks/dbrx-instruct')
     : getOpenRouterModel(apiKey, modelName || 'nousresearch/hermes-3-llama-3.1-405b:free');
 }
